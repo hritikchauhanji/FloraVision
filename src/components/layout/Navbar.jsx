@@ -34,13 +34,17 @@ function Navbar() {
         </ul>
 
         {/* Icons */}
-        <div className="hidden md:flex text-white">
+        <div className="hidden md:flex text-white gap-14">
           <img
             src="/images/navbar/search-interface-symbol.png"
             alt="search"
             className="w-[26px]"
           />
           <img src="/images/navbar/bag.png" alt="" className="w-[26px]" />
+          <span className="flex flex-col justify-start items-end gap-2">
+            <div className="w-[31px] h-0 border-[3px] border-white rounded-full"></div>
+            <div className="w-[23px] h-0 border-[3px] border-white rounded-full"></div>
+          </span>
         </div>
 
         {/* Mobile Hamburger */}
@@ -56,12 +60,11 @@ function Navbar() {
             <button className="text-3xl mb-6" onClick={() => setOpen(false)}>
               ✕
             </button>
-
             <ul className="flex flex-col gap-6 text-lg font-medium">
-              <li className="cursor-pointer">Home</li>
-              <li className="cursor-pointer">Plants</li>
-              <li className="cursor-pointer">About</li>
-              <li className="cursor-pointer">Contact</li>
+              <li>Home</li>
+              <li>Plants</li>
+              <li>About</li>
+              <li>Contact</li>
             </ul>
           </div>
         </div>
