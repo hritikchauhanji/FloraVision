@@ -4,8 +4,8 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full shadow-sm fixed top-0 left-0 z-50">
-      <nav className="mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="w-full fixed top-0 left-0 z-50 mt-14">
+      <nav className="mx-10 px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex justify-center items-center gap-2">
           <img
@@ -13,13 +13,13 @@ function Navbar() {
             src="/public/images/navbar/plant.png"
             alt="plant image"
           />
-          <span className="font-black text-[28px] text-white">
+          <span className="font-black text-[28px] text-white/75">
             FloraVision.
           </span>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-16 text-2xl font-indie text-white">
+        <ul className="hidden md:flex items-center gap-16 text-2xl font-indie text-white/75">
           <li>Home</li>
           <li className="flex justify-center items-center gap-5">
             <span>Plants Type</span>
@@ -34,7 +34,7 @@ function Navbar() {
         </ul>
 
         {/* Icons */}
-        <div className="hidden md:flex text-white gap-14">
+        <div className="hidden md:flex text-white/75 gap-14">
           <img
             src="/images/navbar/search-interface-symbol.png"
             alt="search"
